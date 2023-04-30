@@ -1,0 +1,12 @@
+{
+    "32d32b82-0c19-4652-9820-d4573c78daed": {
+        "id": "32d32b82-0c19-4652-9820-d4573c78daed",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1682288240.058825
+    }
+}

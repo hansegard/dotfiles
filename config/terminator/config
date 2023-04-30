@@ -1,0 +1,23 @@
+[global_config]
+  inactive_color_offset = 0.7837837837837838
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_shape = ibeam
+    palette = "#000000:#e01b24:#73d216:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#e01b24:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    use_theme_colors = True
+    bold_is_bright = True
+    title_hide_sizetext = True
+    title_transmit_bg_color = "#e66100"
+    title_inactive_bg_color = "#77767b"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
