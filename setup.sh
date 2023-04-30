@@ -55,7 +55,6 @@ do
 done
 
 echo "Creating backup dirs $OLD_DOTFILES and $OLD_CONFIG"
-q
 if [ "$DRY_RUN" = false ]
 then
 	mkdir -p $OLD_DOTFILES $OLD_CONFIG
