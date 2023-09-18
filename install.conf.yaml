@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
+    ~/.zshrc.d: zshrc.d
+    ~/.bashrc: bashrc
+    ~/.bashrc.d: bashrc.d
+    ~/.bash_profile: bash_profile
+    ~/.config/kitty: config/kitty
+    ~/.config/micro: config/micro
+    ~/.config/terminator: config/terminator
+    ~/.config/ulauncher: config/ulauncher

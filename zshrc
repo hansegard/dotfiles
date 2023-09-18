@@ -1,6 +1,9 @@
 unsetopt beep
-bindkey -v
-zstyle :compinstall filename '/home/slani/.zshrc'
+bindkey -e
+
+# Bind keys to bash logic
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
 
 # Completion
 autoload -Uz compinit
