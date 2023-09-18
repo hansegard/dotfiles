@@ -11,6 +11,7 @@
     ~/.bashrc: bashrc
     ~/.bashrc.d: bashrc.d
     ~/.bash_profile: bash_profile
+    ~/.tmux.conf: tmux.conf
     ~/.config/kitty: config/kitty
     ~/.config/micro: config/micro
     ~/.config/terminator: config/terminator
