@@ -13,6 +13,7 @@
     ~/.bash_profile: bash_profile
     ~/.tmux.conf: tmux.conf
     ~/.config/kitty: config/kitty
+    ~/.config/alacritty: config/alacritty
     ~/.config/micro: config/micro
     ~/.config/terminator: config/terminator
     ~/.config/ulauncher: config/ulauncher
