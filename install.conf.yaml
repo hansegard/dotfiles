@@ -4,6 +4,9 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.config
+
 - link:
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
