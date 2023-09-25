@@ -7,6 +7,7 @@
 - link:
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
+    ~/.zlogin: zlogin
     ~/.zshrc.d: zshrc.d
     ~/.bashrc: bashrc
     ~/.bashrc.d: bashrc.d

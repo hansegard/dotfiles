@@ -12,9 +12,9 @@ _comp_options+=(globdots) # With hidden files
 
 # User config dir
 if [ -d ~/.zshrc.d ]; then
-        for rc in ~/.zshrc.d/*; do
-        	if [ -f "$rc" ]; then
-                	. "$rc"
-        	fi
+	for rc in ~/.zshrc.d/*; do
+		if [ -f "$rc" ]; then
+			. "$rc"
+		fi
 	done
 fi
