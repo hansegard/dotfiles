@@ -9,5 +9,5 @@ add-zsh-hook precmd prompt_precommand
 zstyle ':vcs_info:git:*' formats '(%b)'
 setopt prompt_subst
 NEWLINE=$'\n'
-PROMPT='%F{green}[%n@%m]%f %F{yellow}%~%f %F{blue}${vcs_info_msg_0_}%f${NEWLINE} %0(? λ %F{red}λ%f) '
+PROMPT='%F{green}[%n@%m]%f %F{yellow}%~%f %F{blue}${vcs_info_msg_0_}%f${NEWLINE}%0(? λ %F{red}λ%f) '
 RPROMPT="%0(?.. %F{black}<%?>%f)"
