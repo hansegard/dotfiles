@@ -1,0 +1,13 @@
+function prompt_precommand() {
+    autoload -Uz vcs_info
+    vcs_info 
+}
+
+
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd prompt_precommand
+zstyle ':vcs_info:git:*' formats '(%b)'
+setopt prompt_subst
+NEWLINE=$'\n'
+PROMPT='%F{green}[%n@%m]%f %F{yellow}%~%f %F{blue}${vcs_info_msg_0_}%f${NEWLINE}λ '
+RPROMPT="%0(?.. %F{red} <%?> %f)"
