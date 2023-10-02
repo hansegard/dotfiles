@@ -19,15 +19,19 @@ if [ -d "$ZDOTDIR/.zshrc.d" ]; then
 	done
 fi
 
-## User functions
-if [ -d "$ZDOTDIR/.function" ]; then
+# Set prompt
+fpath=("$ZDOTDIR" $fpath)
+autoload -Uz prompt
+prompt
+
+## User plugins
+if [ -d "$ZDOTDIR/plugins" ]; then
 	# Setup fpath
-	fpath=("$ZDOTDIR/.function" $fpath)
-	for function_path in "$ZDOTDIR/.function"/*; do
-		if [ -f "$function_path" ]; then
-			function_name=$(basename "$function_path")
-			autoload -Uz "$function_name"
-			"$function_name"
+	fpath=("$ZDOTDIR/plugins" $fpath)
+	for plugin_path in "$ZDOTDIR/plugins"/*; do
+		if [ -f "$plugin_path" ]; then
+			plugin_name=$(basename "$plugin_path")
+			autoload -Uz "$plugin_name"
 		fi
 	done
 fi
