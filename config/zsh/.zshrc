@@ -12,22 +12,22 @@ _comp_options+=(globdots) # With hidden files
 
 # User config dir
 if [ -d "$ZDOTDIR/.zshrc.d" ]; then
-	for rc in "$ZDOTDIR/.zshrc.d/*"; do
+	for rc in "$ZDOTDIR/.zshrc.d"/*; do
 		if [ -f "$rc" ]; then
 			. "$rc"
-			echo $rc
 		fi
 	done
 fi
 
-# User config dir
+## User functions
 if [ -d "$ZDOTDIR/.function" ]; then
-	for rc in "$ZDOTDIR/.function/*"; do
-		if [ -f "$rc" ]; then
-			echo basename $rc
+	# Setup fpath
+	fpath=("$ZDOTDIR/.function" $fpath)
+	for function_path in "$ZDOTDIR/.function"/*; do
+		if [ -f "$function_path" ]; then
+			function_name=$(basename "$function_path")
+			autoload -Uz "$function_name"
+			"$function_name"
 		fi
 	done
 fi
-
-autoload -Uz set-prompt
-set-prompt

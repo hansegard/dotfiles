@@ -16,8 +16,3 @@ if [ -d "$HOME/.pyenv" ]; then
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
 fi
-
-# Set pyenv vars if it exist
-if [ -d "$ZDOTDIR/.function" ]; then
-    export FPATH="$ZDOTDIR/.function:$FPATH"
-fi
