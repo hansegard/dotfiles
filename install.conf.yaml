@@ -18,3 +18,4 @@
     ~/.config/micro: config/micro
     ~/.config/terminator: config/terminator
     ~/.config/ulauncher: config/ulauncher
+    ~/.config/nvim: config/nvim
