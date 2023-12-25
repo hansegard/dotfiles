@@ -8,5 +8,15 @@
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1682288240.058825
+    },
+    "a3d964d1-6e99-4e8a-aea5-585a442ca0c3": {
+        "id": "a3d964d1-6e99-4e8a-aea5-585a442ca0c3",
+        "name": "ZDB Jira ticket",
+        "keyword": "jira",
+        "cmd": "https://zynkadigitalbuildings.atlassian.net/browse/ZDB-%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1701352867.5986059
     }
 }
